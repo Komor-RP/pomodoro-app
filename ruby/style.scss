@@ -1,0 +1,75 @@
+$font: 'Titillium Web', sans-serif;
+$blue: #6798db;
+
+h1, h2, span {
+  font-family: $font;
+}
+h1 {
+  font-size: 5em;
+}
+h2 {
+  font-size: 3em;
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  background-image: url(../assets/background.jpg);
+}
+#controlBar {
+  flex: 1;
+  background: rgba(50, 50, 50, .9);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  box-shadow: 0 0 10px #383838;
+  color: rgba(256, 256, 256, .75);
+  > div {
+    padding: 30px 0;
+  }
+  h2 {
+    font-size: 2em;
+  }
+}
+.controls {
+  font-size: 30px;
+  span {
+    color: $blue;
+  }
+  button {
+    background: none;
+    border: none;
+    color: #929292;
+    transition: all .08s ease;
+    &:hover, &:active {
+      color: #fff;
+    }
+    i {
+      font-size: 30px;
+
+    }
+  }
+}
+.main-controls {
+  background: rgba(60, 60, 60, .9);
+  width: 100%;
+}
+#display {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  color: #6798db;
+  .main, aside {
+    width: 100%;
+  }
+}

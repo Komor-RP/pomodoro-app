@@ -1,0 +1,27 @@
+{
+  "name": "pomodoro",
+  "version": "1.0.0",
+  "description": "Pomodoro App",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "browser-sync start --server --files 'css/*.css, *.js'",
+    "node-sass": "sass --watch ruby/style.scss:css/style.css",
+    "dev": "concurrently --kill-others \"npm run serve\" \"npm run node-sass\" "
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Komor-RP/pomodoro-app.git"
+  },
+  "author": "Fan Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Komor-RP/pomodoro-app/issues"
+  },
+  "homepage": "https://github.com/Komor-RP/pomodoro-app#readme",
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "node-sass": "^4.9.3"
+  }
+}

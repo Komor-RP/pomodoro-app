@@ -1,0 +1,65 @@
+h1, h2, span {
+  font-family: "Titillium Web", sans-serif; }
+
+h1 {
+  font-size: 5em; }
+
+h2 {
+  font-size: 3em;
+  margin: 0; }
+
+body {
+  margin: 0; }
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-image: url(../assets/background.jpg); }
+
+#controlBar {
+  flex: 1;
+  background: rgba(50, 50, 50, 0.9);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  box-shadow: 0 0 10px #383838;
+  color: rgba(255, 255, 255, 0.75); }
+  #controlBar > div {
+    padding: 30px 0; }
+  #controlBar h2 {
+    font-size: 2em; }
+
+.controls {
+  font-size: 30px; }
+  .controls span {
+    color: #6798db; }
+  .controls button {
+    background: none;
+    border: none;
+    color: #929292;
+    transition: all .08s ease; }
+    .controls button:hover, .controls button:active {
+      color: #fff; }
+    .controls button i {
+      font-size: 30px; }
+
+.main-controls {
+  background: rgba(60, 60, 60, 0.9);
+  width: 100%; }
+
+#display {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  color: #6798db; }
+  #display .main, #display aside {
+    width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

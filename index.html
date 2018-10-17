@@ -3,9 +3,52 @@
   <head>
     <meta charset="utf-8" />
     <title>Pomodoro App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <section class="container">
+      <div id="controlBar">
+        <div class="work">
+          <h2>Work</h2>
+          <div class="controls">
+            <button><i class="fas fa-angle-double-down down"></i></button>
+            <span>25</span>
+            <button><i class="fas fa-angle-double-up"></i></button>
+          </div>
+        </div>
+        <div class="controls main-controls">
+          <button><i class="fas fa-play"></i></button>
+          <button><i class="fas fa-stop"></i></button>
+          <button><i class="fas fa-step-backward"></i></button>
+          <button><i class="fas fa-forward"></i></button>
+        </div>
+        <div class="rest">
+          <h2>Rest</h2>
+          <div class="controls">
+            <button><i class="fas fa-angle-double-down down"></i></button>
+            <span>25</span>
+            <button><i class="fas fa-angle-double-up"></i></button>
+          </div>
+        </div>
 
+
+
+      </div>
+      <div id="display">
+        <div class="main">
+          <h1></h1>
+        </div>
+        <aside>
+          <h2>Segments Completed Today</h2>
+          <span><i class="far fa-check-circle"></i><i class="far fa-check-circle"></i><i class="far fa-check-circle"></i></span>
+        </aside>
+
+
+      </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
