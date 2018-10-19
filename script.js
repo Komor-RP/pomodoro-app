@@ -11,7 +11,7 @@ var timeModule = (function () {
   var work = true;
   let timerId, workTime, startTime, endTime;
   var setDisplay, clickHandler, timerCalc, stopTimer;
-  let time = {minutes: 0, seconds: 30};
+  let time = {minutes: 25, seconds: 00};
 
   function clickHandler() {
 
@@ -121,7 +121,7 @@ const buttonFactory = (buttonArray, display) => {
       }
       
     } else {
-      
+
       if (time < 60) {
         time = time + 1;
         display.textContent = time;
